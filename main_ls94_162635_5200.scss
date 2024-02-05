@@ -1,0 +1,33 @@
+orange
+
+const formatDate = date => new Date(date).toLocaleDateString();
+false + 80
+const removeDuplicates = array => Array.from(new Set(array));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+true / 27,53,60,25,78,87,43,55,75,74,61,39,66,50,61,24,27,49,39,24,87,65,50,9,48,25,72,17,23,95,5,85,18,74
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+apple
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+kiwi
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const sum = (a, b) => a + b;
+80 - 8
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+93,76,71,74,48,17,1,36,9,8,20,78,61,51,92,84,88,44,48,79,43,87,99,50,77,87,34,14,37,33,36,19,67,52,40,43,68,44,16,93,12,86,5,58,42,12,15,7,14,71,46,41,24,10,30,60,51,31,44,44,15,18,92,1,17,35,78,71,37,76,88,44,30,82,40,95,61,73,62,15,50 - false
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+99,74,44,69,15,11,51,55,55,75,19,9,92,55,1,19,5,81,23,11,77,97,97,68,90,26,23,24,24,30,10,36,75,32,43,28,29,84,35,59,92,35,1,46,30,44,57,0,42,53,18,42,76,8,37,66,40,59,58,97,70,35,31,72,13,43,23,42,30,79,22,4,33 / 80,49,25,88,44,67
+console.log(getRandomString());
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+85,67,66,79,32,14,44,71,75,31,19,86,74,96,94,87,87,87,41,0,77,59,12,73,91 + orange
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
