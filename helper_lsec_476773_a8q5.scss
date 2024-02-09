@@ -1,0 +1,99 @@
+kiwi
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+apple
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+orange
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+kiwi
+
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+apple
+
+const removeDuplicates = array => Array.from(new Set(array));
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+6 / true
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+76,65,80,57,88,14,83,81,21,52,83,62,46,35,46,46,79,64,73,92,86,23,49,45,9,11,27,46,43,47,61,84,33,60,20,86,54,84,21,21,97,91,48,78,77,45,83,88,98,19,66,54,46,16,85,95,15,34,44,79,68,53 + 18
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+apple
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+kiwi
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+49,22,56,39,28,75,98,72,81,88,34,4,72,78,81,99,71,45,52,12,30,27,55,69,81,4,70,51,88,0,8,8,76,79,23,35,46,18,86,19,84,95,33,99,78,14,68,68,50,7,68,27,47,41,16,41,98,58,20,26,3,94,90,67,81,19,29,7,92,59 + grape
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+kiwi
+
+const greet = name => `Hello, ${name}!`;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const isEven = num => num % 2 === 0;
+
+orange + 14
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const reverseString = str => str.split("").reverse().join("");
+grape / false
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalizeString = str => str.toUpperCase();
+apple
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+true * 3,18,49,95,21,40,91,73,23,86,69,25,5,82,37,53,99,42,15,58,25,23,26,75,11,23,22,25,92,54,78
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+kiwi * apple
+const variableName = getRandomNumber();
+84 + 90,17,96,24,48,34,61,92,61,58,7,1,85,54,80,60,77,95,27,48,8,90,81,55,68,96,38,69,45,93,5,37,96,26,94,41,25,79,76,84,7,42,41,90,36,19,59,26,40,45,47,17,41,90,8,4,0,71,15,76,48,14,60,41,86,11,45,43,8,62,23,9,67,1,3,58,48,24,75,93,42,39,51,61,60,93,81,25,69
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const greet = name => `Hello, ${name}!`;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+grape
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+kiwi
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const sum = (a, b) => a + b;
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
