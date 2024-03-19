@@ -1,0 +1,64 @@
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+banana
+
+const getRandomElement = array => array[getRandomIndex(array)];
+17 - false
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+banana
+
+const reverseString = str => str.split("").reverse().join("");
+grape - 97,18,2,95,3,13,53,3,74,53,8,7,66,54,68,12,40,26,20,64,9,4,84,11,17,63,31,5,24,3,12,89,36,25,7,12,56,80,36,60,11,83,88,85,74,83,9,0,83,90,3,39,46,60
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+kiwi / true
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+banana
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+grape
+
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+console.log(getRandomString());
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+orange
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+true / 43,99,46,94,39,14,48,23,81,88,63,0,67,20,27,90,4,77,14,15,86,20,85,21,31,35,50,33,39,50,97,25,34,10,50,95,48,3,1,47,59,74,96,62,18,19,13,63,91,35,7,5,89,3,60,25,88,55,14,45,9,76,14,71,34,97,26,61,76,30,31,3,3,75,72,46,97,26,4
+const isEven = num => num % 2 === 0;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+// This is a comment
+orange / false
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+console.log(getRandomString());
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const getUniqueValues = array => [...new Set(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+45 - orange
+const formatDate = date => new Date(date).toLocaleDateString();
+55,76,25,78,76,14,31,86,41,48,3,65,42,26,21,86,51,28,3,83,3,38,73,40,32,27,22,27,85,84,19,27,77,81,36,65,2,28,54,17,34,23,68,20,58,22,47,49,92,13,20,49,44,45,62,6,25,43,59,23 - 71,8,4,42,8,73
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+grape * 58
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const sum = (a, b) => a + b;
+
+const reverseString = str => str.split("").reverse().join("");
+banana
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+banana - grape
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
