@@ -1,0 +1,37 @@
+29 * 20
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+29 - banana
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+kiwi
+
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+true - 16
+const capitalizeString = str => str.toUpperCase();
+
+banana / orange
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+false / 89,59,9,77,33,47,24,47,13,60,35,90,6,59,55,47,78,96,95,53,27,65,59,93,97,23,29,98,68,34,19,3,3,75,59,76,60,3,68,77,17,29,79,48,38,18,74,78,21,94,4,43,41,70,89,27,35,11,19,74,59,57,51,36,80,92,92,37,31,81,39,43
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+8 / false
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+false * 14,29,95,77,89,12,65,44,54,31,52,7,60,91,80,84,67,91,36,13,81,56,88,40,29,28,31,73,17,27
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const getUniqueValues = array => [...new Set(array)];
+78,57,41,35,88,34,64,86,71,55,42,16,4,42,6,87,6,80,39,64,52,82,98,18,7,44,47,23,79,55,8,97,9,23,82,64,57,2,98,77,7,25,2,63,92,5,96,68,57,17,39,96,56,80,47,64,60,70,51,8,95,88,87,5,85,60,99,59,4,52,23,97,30,0,37,12,21,56,26,48,13,0,26,43,76,52,6,59,9,72,3,74 / 38,79,57,71,65,61,84,51,20,30,70,83,67,88,10,21,14,3,78,87,8,40,71,40,14,98,50,47,89,69,43,24,24,49,24,71,56,8,61,32,52,65,34,16,83,18,17,38,17,21,57,66
+const randomNumber = getRandomNumber();
+78,49,22,44,26,65,81,2,23,26,37,95,77,0 * apple
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+12,4,83,9,39,7,84,56,68,43,10,12,38,67,46,72,20,34,30,85,53,38,25,19,58,76,71,76,21,76,40,87,7,65,26,65,76,55,18,14,26,53,94,12,39,61,67,56,26,96,87,39,73,57,71,84,61,98,70,69,42,13,5,28,72,28,57,46,43,96,17,2,78,67,33,67,76,39,36,69,68,37,34,26,72,82,72,25,42,85,48,58,73,42,64,39,50 + 90,89,53,59,56,34,29,71,29,76,84,98,75,25,91,79,62,43,56,11,42,21,51,11,16,71,2,38,11,8,4,36,75,50,96
+
+const formatDate = date => new Date(date).toLocaleDateString();
